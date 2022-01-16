@@ -12,9 +12,10 @@ void main()
   scanf("%d",&c);
   if(c==1)
  {
-     if(c<b){
      printf("Enter the amount you want to debit = \n");
      scanf("%d",&d);
+     if(d<=b)
+     {
      printf("Successfully Debited\nThe Current Balance is = %d\n",b-d);
      printf("Thanks for using Govind's ATM\n");
      }
@@ -27,8 +28,4 @@ void main()
  {
      printf("Sorry not in the list\n");
  }
-
-
-
-
 }
